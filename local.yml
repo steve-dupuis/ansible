@@ -1,6 +1,6 @@
 - name: Set up ansible control files
-  hosts: localhost
-  become: true
+  - hosts: localhost
+    become: true
   tasks:
   - name: Install packages
     pacaur: name={{item}}
