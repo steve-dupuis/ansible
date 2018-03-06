@@ -1,9 +1,5 @@
-- hosts: arch8
+- hosts: localhost
   become: true
   tasks:
   - name: Install packages
-    pacaur: name={{item}}
-    with_items:
-     - htop
-     - mc
-     - tmux
+    pacaur: name=htop
