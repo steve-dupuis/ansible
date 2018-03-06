@@ -1,5 +1,5 @@
-  - hosts: localhost
-    become: true
+- hosts: arch8
+  become: true
   tasks:
   - name: Install packages
     pacaur: name={{item}}
