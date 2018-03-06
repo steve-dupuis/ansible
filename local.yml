@@ -1,5 +1,5 @@
 - name: Set up ansible control files
-  - hosts: localhost
+    hosts: localhost
     become: true
   tasks:
   - name: Install packages
