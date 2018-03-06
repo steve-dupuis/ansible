@@ -1,5 +1,9 @@
 - hosts: localhost
   become: true
   tasks:
-  - name: Install htop
-    pacaur: name=htop
+  - name: Install packages
+    pacaur: name={{item}}
+    with_items:
+     - htop
+     - mc
+     - tmux
